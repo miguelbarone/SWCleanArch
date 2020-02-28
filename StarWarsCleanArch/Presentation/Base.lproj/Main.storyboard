@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FirstViewController" customModule="StarWarsCleanArch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pKm-rB-0Yk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="oshomikkk" translatesAutoresizingMaskIntoConstraints="NO" id="Ia1-i4-E8z">
+                                        <rect key="frame" x="-247" y="-310" width="883" height="1458"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rML-pz-KrD">
+                                        <rect key="frame" x="80" y="684" width="215" height="48"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="26"/>
+                                        <state key="normal" title="Start journey">
+                                            <color key="titleColor" red="0.8732653856" green="0.068760702049999997" blue="0.060493364729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callListScrennButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aE0-eG-mZa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ia1-i4-E8z" secondAttribute="trailing" constant="-261" id="4Ta-n8-CYv"/>
+                                    <constraint firstItem="rML-pz-KrD" firstAttribute="leading" secondItem="pKm-rB-0Yk" secondAttribute="leading" constant="80" id="GyR-rP-lOi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ia1-i4-E8z" secondAttribute="bottom" constant="-336" id="UvR-0J-R8z"/>
+                                    <constraint firstItem="Ia1-i4-E8z" firstAttribute="leading" secondItem="pKm-rB-0Yk" secondAttribute="leading" constant="-247" id="ceL-Ex-ANv"/>
+                                    <constraint firstAttribute="bottom" secondItem="rML-pz-KrD" secondAttribute="bottom" constant="80" id="fga-Jp-ILe"/>
+                                    <constraint firstAttribute="trailing" secondItem="rML-pz-KrD" secondAttribute="trailing" constant="80" id="tO0-Nk-H0n"/>
+                                    <constraint firstItem="Ia1-i4-E8z" firstAttribute="top" secondItem="pKm-rB-0Yk" secondAttribute="top" constant="-310" id="vM6-IF-etY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pKm-rB-0Yk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Wk-Jk-Fid"/>
+                            <constraint firstAttribute="bottom" secondItem="pKm-rB-0Yk" secondAttribute="bottom" id="Evf-qN-Ohe"/>
+                            <constraint firstItem="pKm-rB-0Yk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="STV-7M-gxE"/>
+                            <constraint firstItem="pKm-rB-0Yk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="a2P-Iy-rjn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="ldw-fi-XDb">
+            <objects>
+                <viewController storyboardIdentifier="ListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QBU-YR-4ff" customClass="ListViewController" customModule="StarWarsCleanArch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kpv-DA-T5Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-aa-CAs">
+                                <rect key="frame" x="0.0" y="80" width="375" height="732"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksV-rK-can">
+                                <rect key="frame" x="12" y="50" width="21" height="22"/>
+                                <color key="tintColor" red="0.8732653856" green="0.068760702049999997" blue="0.060493364729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="backButton:" destination="QBU-YR-4ff" eventType="touchUpInside" id="hPQ-Nd-jQ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ksV-rK-can" firstAttribute="leading" secondItem="kpv-DA-T5Z" secondAttribute="leading" constant="12" id="AxI-Ad-575"/>
+                            <constraint firstItem="dcB-aa-CAs" firstAttribute="trailing" secondItem="vLA-vH-0wQ" secondAttribute="trailing" id="Gsh-1a-lv3"/>
+                            <constraint firstItem="dcB-aa-CAs" firstAttribute="top" secondItem="kpv-DA-T5Z" secondAttribute="top" constant="80" id="QlL-VP-K09"/>
+                            <constraint firstItem="ksV-rK-can" firstAttribute="top" secondItem="kpv-DA-T5Z" secondAttribute="top" constant="50" id="SO5-2E-xoe"/>
+                            <constraint firstItem="dcB-aa-CAs" firstAttribute="leading" secondItem="vLA-vH-0wQ" secondAttribute="leading" id="TPr-Xa-ulM"/>
+                            <constraint firstAttribute="bottom" secondItem="dcB-aa-CAs" secondAttribute="bottom" id="saV-HP-t9u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vLA-vH-0wQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GEZ-Mz-45r"/>
+                    <connections>
+                        <outlet property="tableView" destination="dcB-aa-CAs" id="KEH-cv-yIL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tew-IE-yP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="64" height="52"/>
+        <image name="oshomikkk" width="1920" height="1920"/>
+    </resources>
+</document>
